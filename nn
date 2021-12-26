@@ -1,0 +1,9 @@
+#Дано натуральное число n. Выведите все числа от 1 до n.
+def rec_list(n, l = []):
+    if len(l) < n:
+        l.append(len(l) + 1)
+        rec_list(n, l)
+    else:
+        return print(*l)
+ 
+rec_list(10)
